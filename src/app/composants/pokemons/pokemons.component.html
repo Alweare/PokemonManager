@@ -1,1 +1,16 @@
-<p>pokemons works!</p>
+<h1>OUI OUI OUI</h1>
+
+
+<div *ngIf="pokemon$ | async as test">
+
+  <div>
+    {{ test.id}}
+    {{ test.name}}
+    {{ test.type.name}}
+    {{ test.height}}
+    {{ test.weight}}
+
+  </div>
+  <img [src]="test.sprites.front_shiny" alt="">
+
+</div>

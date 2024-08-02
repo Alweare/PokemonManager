@@ -5,11 +5,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './generations.component.html',
   styleUrls: ['./generations.component.scss']
 })
-export class GenerationsComponent implements OnInit {
+export class GenerationsComponent  {
 
+  generation:string[] =  ['Génération I','Génération II','Génération III','Génération IV','Génération V','Génération VI','Génération VII'];
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
